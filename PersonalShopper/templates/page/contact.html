@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="container" style="text-align:center;">
+  <main>
+    <div class="py-5 text-center">
+
+      <h2 style="color: #855d58;">Contact Me </h2>
+      <p class="lead" style="color: #855d58;">Feel free to contact me at any time I will message you as soon as I can</p>
+    </div>
+<form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+
+        <div class="fcf-form-group">
+            <label for="Name" class="fcf-label" style="color:#fcb69f">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label" style="color:#fcb69f">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label" style="color:#fcb69f">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+<br>
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+        </div>
+
+
+    </form>
+{% endblock %}
